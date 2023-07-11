@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+.content {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+.dot {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  background-color: #bd6417;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 5px;
+}
+.first-dot {
+  animation: bounce 1s linear 0s infinite;
+}
+.second-dot {
+  animation: bounce 1s linear 0.25s infinite;
+}
+.third-dot {
+  animation: bounce 1s linear 0.5s infinite;
+}
+.fourth-dot {
+  animation: bounce 1s linear 0.75s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 1rem;
+  }
+  100% {
+    top: 0;
+  }
+}
